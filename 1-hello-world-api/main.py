@@ -10,8 +10,8 @@ async def docs_redirect():
 
 
 @app.get("/hello-world")
-def read_root():
-    return {"Hello": "World"}
+def read_root(name: str):
+    return {"message": f"Hello {name}"}
 
 
 @app.post("/posting")
