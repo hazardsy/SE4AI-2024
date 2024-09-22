@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
-from .src.languages import Language
-from .src.translation import translator
+
+from .languages import Language
+from .translation import translator
 
 app = FastAPI()
 

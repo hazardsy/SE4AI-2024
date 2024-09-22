@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.115.0",
-    "transformers[pytorch,sentencepiece,torch]>=4.44.2",
+    "transformers[sentencepiece,torch]>=4.44.2",
 ]
