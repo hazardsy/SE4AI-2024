@@ -1,0 +1,10 @@
+[project]
+name = "se4ai-2024-private"
+version = "0.1.0"
+description = "ENSC SE4AI class 2024"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.0",
+    "transformers[pytorch,sentencepiece,torch]>=4.44.2",
+]
