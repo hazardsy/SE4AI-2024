@@ -1,3 +1,5 @@
+curl -X GET "http://localhost:8000/translate?input_language=English&output_language=Spanish&input_text=hello"
+
 docker exec -it <container name> sh
 docker cp <container name>:/app/logs/translations.jsonl .
 
