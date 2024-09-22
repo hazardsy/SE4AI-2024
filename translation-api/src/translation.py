@@ -5,8 +5,8 @@ from .languages import Language
 
 class Translator(object):
     def __init__(self):
-        self.tokenizer = T5Tokenizer.from_pretrained("google-t5/t5-large")
-        self.model = T5ForConditionalGeneration.from_pretrained("google-t5/t5-large")
+        self.tokenizer = T5Tokenizer.from_pretrained("google-t5/t5-base")
+        self.model = T5ForConditionalGeneration.from_pretrained("google-t5/t5-base")
 
     def translate(
         self, input_language: Language, output_language: Language, input_text: str
