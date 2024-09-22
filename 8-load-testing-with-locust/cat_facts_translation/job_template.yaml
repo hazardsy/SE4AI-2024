@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cat-facts-translation
+spec:
+  schedule: "*/2 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: cat-facts-translation
+              image: syhazard/cat-facts-translation
+              env:
+                - name: N_FACTS
+                  value: "5"
+                - name: TRANSLATION_URL
+                  value: http://translator-service:80
+          restartPolicy: Never
+      backoffLimit: 4
