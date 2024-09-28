@@ -50,6 +50,8 @@ docker cp <source> <destination>
 docker cp <container name>:/app/logs/translations.jsonl ./logs
 ```
 
+[Docker CLI Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+
 ### Kubernetes
 #### Appliquer un template
 ```sh
@@ -81,3 +83,4 @@ kubectl port-forward service/translator-service 3000:80
 kubectl scale --replicas=3 deployment/translator-deployment
 ```
 
+[Kubectl Cheat Sheet](https://kubernetes.io/fr/docs/reference/kubectl/cheatsheet/)
