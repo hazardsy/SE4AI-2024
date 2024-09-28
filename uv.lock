@@ -1045,7 +1045,7 @@ wheels = [
 ]
 
 [[package]]
-name = "se4ai-2024-private"
+name = "se4ai-2024"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
@@ -1054,12 +1054,20 @@ dependencies = [
     { name = "transformers", extra = ["sentencepiece", "torch"] },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "locust" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.115.0" },
-    { name = "locust" },
+    { name = "locust", specifier = ">=2.31.6" },
     { name = "transformers", extras = ["sentencepiece", "torch"], specifier = ">=4.44.2" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "locust", specifier = ">=2.31.6" }]
 
 [[package]]
 name = "sentencepiece"

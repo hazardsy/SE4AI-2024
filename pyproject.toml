@@ -1,5 +1,5 @@
 [project]
-name = "se4ai-2024-private"
+name = "se4ai-2024"
 version = "0.1.0"
 description = "ENSC SE4AI class 2024"
 readme = "README.md"
@@ -7,5 +7,10 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.115.0",
     "transformers[sentencepiece,torch]>=4.44.2",
+    "locust>=2.31.6",
+]
+
+[tool.uv]
+dev-dependencies = [
     "locust>=2.31.6",
 ]
